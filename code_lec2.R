@@ -1,3 +1,5 @@
+# (※まだの方のみ)RとRstudioは以下ページの手順に従ってダウンロード ####
+# https://posit.co/download/rstudio-desktop/
 
 # install.packages(c("sf","mapview","RColorBrewer","stringr","car")) # 初回のみ#を外して回してください
 library(sf)
