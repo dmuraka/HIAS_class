@@ -103,6 +103,9 @@ dland$tk_dist <- apply(dmat_t, 1, min)
 ###### データの性質の確認
 summary(dprice3)
 dprice3 <- na.omit(dprice3)  # 欠損を含む行の除去
+dprice3$tk_dist<-as.numeric(dprice3$tk_dist) # st_distanceで評価した距離は数値形式に変換
+dprice3$st_dist<-as.numeric(dprice3$st_dist) # 追加
+
 price   <- dprice3$price     # 住宅地公示地価
 st_dist <- dprice3$st_dist   # 最寄駅までの距離
 tk_dist <- dprice3$tk_dist   # 東京駅までの距離
